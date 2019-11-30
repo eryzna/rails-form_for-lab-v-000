@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
     @student.save
     redirect_to student_path(@student)
   end
-  
+
   def show
   end
 
@@ -19,5 +19,5 @@ class StudentsController < ApplicationController
 
   def update
   end
-  
+
 end
