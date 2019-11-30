@@ -105,3 +105,29 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 142.79.216.53 at 2019-11-30 23:16:56 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 29ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/new" for 142.79.216.53 at 2019-11-30 23:17:01 +0000
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (66.1ms)
+Completed 200 OK in 737ms (Views: 724.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/school_classes" for 142.79.216.53 at 2019-11-30 23:17:08 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FQRFPHdD/ZgMkeOswO3ceKtffDsSITUkS+2UMbcq7625TvPo5wBUgVsiBdPBiLNAlD318rza+EKjwJDtZxcVAg==", "school_class"=>{"title"=>"Gustav", "room_number"=>"2"}, "commit"=>"Submit School Class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "school_classes" DEFAULT VALUES[0m
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.31.208:46996/school_classes/2
+Completed 302 Found in 9ms (ActiveRecord: 3.7ms)
+
+
