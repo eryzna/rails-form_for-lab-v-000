@@ -7,4 +7,3 @@ class CreateSchoolClasses < ActiveRecord::Base
     end
   end
 end
-  
