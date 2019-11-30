@@ -1,4 +1,4 @@
-class CreateSchoolClasses < ActiveRecord::Base
+class CreateSchoolClasses < ActiveRecord::Migration
 
   def change
     create_table :school_classes do
